@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Information</title>
+<style>
+    @font-face {
+    font-family: 'Cabin Sketch';
+    src: url('CabinSketch-Regular.woff2') format('woff2'),
+         url('CabinSketch-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Akaya Telivigala';
+    src: url('AkayaTelivigala-Regular.woff2') format('woff2'),
+         url('AkayaTelivigala-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+    body {
+        font-family: 'Cabin Sketch', sans-serif;
+        margin: 0;
+        padding: 0;
+        /* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+        background:#E8D8D4
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .contact-info {
+        background: #BEABA7;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        width: 90%;
+        text-align: center;
+        transform: translateY(0);
+        transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    
+    .contact-info:hover {
+        transform: translateY(-10px);
+    }
+    
+    .contact-info h2 {
+        margin-top: 0;
+        color: #333;
+        font-size: 32px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-info p {
+        margin-bottom: 15px;
+        color: #333;
+        font-size: 20px;
+    }
+    
+    .contact-info p:last-child {
+        margin-bottom: 0;
+    }
+    
+    .contact-info a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        padding: 12px 40px;
+        background-color: #AA7C7A;
+        border-radius: 35px;
+        box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    .contact-info a:hover {
+        background-color: #ff8f8f;
+        transform: translateY(-2px);
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:youremail@gmail.com?subject=Subject&body=Body">youremail@gmail.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+    </div>
+</div>
+
+</body>
+</html>
